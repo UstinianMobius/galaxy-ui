@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy UI</title>
+  </head>
+  <body>
+    <h1>组件单独导入</h1>
+    <div id="app"></div>
+    <link rel="stylesheet" href="../dist/assets/main.f4e87f69.css">
+    <script src="../node_modules/vue/dist/vue.global.js"></script>
+    <script type="module">
+      const { createApp } = Vue
+      import { TemplateButton, TsxButton } from "../dist/galaxy-ui.es.js";
+
+      createApp({
+        template: `
+      <TemplateButton />
+      <div style="margin-top: 20px;">
+        <TsxButton color="blue">主要按钮</TsxButton>
+        <TsxButton color="green">绿色按钮</TsxButton>
+        <TsxButton color="gray">灰色按钮</TsxButton>
+        <TsxButton color="yellow">黄色按钮</TsxButton>
+        <TsxButton color="red">红色按钮</TsxButton>
+      </div>
+    `,
+      })
+        .component(TemplateButton.__name, TemplateButton)
+        .component(TsxButton.name, TsxButton)
+        .mount("#app");
+    </script>
+  </body>
+</html>

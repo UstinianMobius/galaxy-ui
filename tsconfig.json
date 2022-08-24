@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve"
+  },
+  "include": ["./**/*.*", "./shims-vue.d",  "docs/**/*.ts",],
+  "exclude": ["node_modules"],
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": "true"
+}
