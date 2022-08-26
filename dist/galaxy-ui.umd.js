@@ -48,8 +48,8 @@ document.head.appendChild(__vite_style__);
       default: ""
     }
   };
-  const TsxButton = vue.defineComponent({
-    name: "TsxButton",
+  const GButton = vue.defineComponent({
+    name: "GButton",
     props,
     setup(props2, {
       slots
@@ -95,11 +95,11 @@ document.head.appendChild(__vite_style__);
   const main = {
     install(app) {
       app.component(_sfc_main.__name, _sfc_main);
-      app.component(TsxButton.name, TsxButton);
+      app.component(GButton.name, GButton);
     }
   };
   exports2.TemplateButton = _sfc_main;
-  exports2.TsxButton = TsxButton;
+  exports2.GButton = GButton;
   exports2.default = main;
   Object.defineProperties(exports2, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
 });

@@ -42,8 +42,8 @@ const props = {
     default: ""
   }
 };
-const TsxButton = defineComponent({
-  name: "TsxButton",
+const GButton = defineComponent({
+  name: "GButton",
   props,
   setup(props2, {
     slots
@@ -89,11 +89,11 @@ const TsxButton = defineComponent({
 const main = {
   install(app) {
     app.component(_sfc_main.__name, _sfc_main);
-    app.component(TsxButton.name, TsxButton);
+    app.component(GButton.name, GButton);
   }
 };
 export {
   _sfc_main as TemplateButton,
-  TsxButton,
+  GButton,
   main as default
 };

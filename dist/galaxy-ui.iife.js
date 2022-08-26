@@ -46,8 +46,8 @@ var GalaxyUI = function(exports, vue) {
       default: ""
     }
   };
-  const TsxButton = vue.defineComponent({
-    name: "TsxButton",
+  const GButton = vue.defineComponent({
+    name: "GButton",
     props,
     setup(props2, {
       slots
@@ -93,11 +93,11 @@ var GalaxyUI = function(exports, vue) {
   const main = {
     install(app) {
       app.component(_sfc_main.__name, _sfc_main);
-      app.component(TsxButton.name, TsxButton);
+      app.component(GButton.name, GButton);
     }
   };
   exports.TemplateButton = _sfc_main;
-  exports.TsxButton = TsxButton;
+  exports.GButton = GButton;
   exports.default = main;
   Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
   return exports;

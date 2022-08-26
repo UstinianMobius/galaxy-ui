@@ -15,18 +15,18 @@
       const { createApp } = Vue
       import GalaxyUI, {
         TemplateButton,
-        TsxButton,
+        GButton,
       } from "../dist/galaxy-ui.es.js";
 
       createApp({
         template: `
             <TemplateButton />
             <div style="margin-top: 20px;">
-              <TsxButton color="blue">主要按钮</TsxButton>
-              <TsxButton color="green">绿色按钮</TsxButton>
-              <TsxButton color="gray">灰色按钮</TsxButton>
-              <TsxButton color="yellow">黄色按钮</TsxButton>
-              <TsxButton color="red">红色按钮</TsxButton>
+              <GButton color="blue">主要按钮</GButton>
+              <GButton color="green">绿色按钮</GButton>
+              <GButton color="gray">灰色按钮</GButton>
+              <GButton color="yellow">黄色按钮</GButton>
+              <GButton color="red">红色按钮</GButton>
             </div>
         `,
       })
