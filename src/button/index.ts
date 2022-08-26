@@ -1,3 +1,3 @@
-import GButton from "./GButton";
+import GButton from './GButton'
 
-export default GButton;
+export default GButton

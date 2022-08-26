@@ -1,8 +1,8 @@
 module.exports = {
     root: true,
     rules: {
-        semi: false,
-        singleQuote: true,
+        quotes: [1, 'single'],
+        semi: [2, "never"]
     },
     env: {
         browser: true,
