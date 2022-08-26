@@ -1,5 +1,3 @@
-import GButton from "./GButton";
+import GButton from './GButton'
 
-const name = "123";
-
-export default GButton;
+export default GButton
