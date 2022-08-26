@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import GalaxyUI from '../lib/main'
 
+const name = '123'
+
 const app = createApp({
     template: `
         <div style="margin-bottom: 20px;">
