@@ -1,5 +1,9 @@
 module.exports = {
     root: true,
+    rules: {
+        semi: false,
+        singleQuote: true,
+    },
     env: {
         browser: true,
         es2020: true,
