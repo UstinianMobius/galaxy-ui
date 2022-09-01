@@ -64,5 +64,24 @@ describe("round", () => {
         .includes("rounded-lg")
     ).toBe(true);
   });
+
+  test("icon", () => {
+    const wrapper = shallowMount(GButton, {
+      slots: {
+        default: "GButton",
+      },
+      props: {
+        icon: "edit",
+      },
+    });
+
+    expect(
+      wrapper
+        .find("i")
+        .classes()
+        .map((v) => v.replace("\n", ""))
+        .includes("i-ic-baseline-edit")
+    ).toBe(true);
+  });
 });
 

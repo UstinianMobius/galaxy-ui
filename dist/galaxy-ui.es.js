@@ -9,7 +9,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const props2 = __props;
     const buttonRef = ref(null);
     onMounted(() => {
-      buttonRef.value.focus();
+      console.log("buttonRef", buttonRef.value);
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("button", {
@@ -93,7 +93,8 @@ const main = {
   }
 };
 export {
-  _sfc_main as TemplateButton,
   GButton,
+  _sfc_main as TemplateButton,
   main as default
 };
+//# sourceMappingURL=galaxy-ui.es.js.map
