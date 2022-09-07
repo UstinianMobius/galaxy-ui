@@ -35,7 +35,11 @@ const config = {
         siteTitle: 'GalaxyUI',
         logo: '/planet.svg',
         nav,
-        sidebar
+        sidebar,
+        footer: {
+            // message: 'Released under the MIT License.',
+            copyright: 'Copyright © 2022 Ustinian Made In Feature'
+        }
     },
     markdown: {
         config: (md) => {
